@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+	background: url(imagenes/fondo-madera.jpg) no-repeat center center/ cover;
+}
+
+.contenido-centrado {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Contenedor*/
+
+.contenedor-principal {
+	width: 80vw;
+	max-width: 450px;
+	min-height: 450px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: transparent;
+	border-radius: 250px;
+	border: 5px solid #000;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(8px);
+}
+
+.contenedor-botones {
+	padding: 20px;
+}
+
+/* Cronometro*/
+
+#cronometro {
+	width: 100%;
+	font-size: 60px;
+	font-weight: bold;
+	user-select: none;
+	font-family: 'Noto Sans Thai', sans-serif;
+}
+
+/*Botones*/
+
+.boton {
+	width: 65px;
+	height: 65px;
+	font-size: 50px;
+	margin: 10px;
+	padding-top: 5px;
+	border-radius: 50px;
+}
+
+#boton-inicio-pausa.iniciar {
+	background-color: #2cef2c;
+	cursor: pointer;
+	transition: 0.3s all;
+}
+
+#boton-inicio-pausa.pausar {
+	background-color: #ffdc00;
+	cursor: pointer;
+	transition: 0.3s all;
+}
+
+#boton-reiniciar {
+	background-color: red;
+	cursor: pointer;
+	transition: 0.3s all;
+}
+
+#boton-inicio-pausa.iniciar:hover {
+	transform: scale(1.08);
+	background-color: #10ce10;
+}
+
+#boton-inicio-pausa.iniciar:active {
+	transform: scale(0.8);
+}
+
+#boton-inicio-pausa.pausar:hover {
+	transform: scale(1.08);
+	background-color: #d5b902;
+}
+
+#boton-inicio-pausa.pausar:active {
+	transform: scale(0.8);
+}
+
+#boton-reiniciar:hover {
+	transform: scale(1.08);
+	background-color: #c40202;
+}
+
+#boton-reiniciar:active {
+	transform: scale(0.8);
+}
